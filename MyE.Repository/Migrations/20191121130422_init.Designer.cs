@@ -10,7 +10,7 @@ using MyE.Repository.Context;
 namespace MyE.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20191121113625_init")]
+    [Migration("20191121130422_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,11 +29,15 @@ namespace MyE.Repository.Migrations
 
                     b.Property<string>("Description");
 
+                    b.Property<int?>("MachineReviewId");
+
                     b.Property<int>("MembershipId");
 
                     b.Property<DateTime>("ReportDate");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MachineReviewId");
 
                     b.ToTable("FinalReports");
                 });
@@ -51,6 +55,8 @@ namespace MyE.Repository.Migrations
                     b.Property<int>("UserId");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("MachineReviews");
                 });
@@ -91,7 +97,7 @@ namespace MyE.Repository.Migrations
 
             modelBuilder.Entity("MyE.Entity.Order", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -99,13 +105,19 @@ namespace MyE.Repository.Migrations
 
                     b.Property<int>("MedicalEquipamentId");
 
+                    b.Property<int?>("MedicalEquipmentId");
+
                     b.Property<int>("Priority");
 
                     b.Property<int>("UserId");
 
                     b.Property<string>("description");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicalEquipmentId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Orders");
                 });
@@ -139,6 +151,10 @@ namespace MyE.Repository.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("UserId");
+
                     b.ToTable("Schedules");
                 });
 
@@ -162,11 +178,62 @@ namespace MyE.Repository.Migrations
 
                     b.Property<string>("Phone");
 
+                    b.Property<int?>("RoleId");
+
                     b.Property<string>("Tipodoc");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MyE.Entity.FinalReport", b =>
+                {
+                    b.HasOne("MyE.Entity.MachineReview")
+                        .WithMany("FinalReports")
+                        .HasForeignKey("MachineReviewId");
+                });
+
+            modelBuilder.Entity("MyE.Entity.MachineReview", b =>
+                {
+                    b.HasOne("MyE.Entity.User")
+                        .WithMany("MachineReviews")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("MyE.Entity.Order", b =>
+                {
+                    b.HasOne("MyE.Entity.MedicalEquipment")
+                        .WithMany("Orders")
+                        .HasForeignKey("MedicalEquipmentId");
+
+                    b.HasOne("MyE.Entity.User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("MyE.Entity.Schedule", b =>
+                {
+                    b.HasOne("MyE.Entity.Order")
+                        .WithMany("Schedules")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("MyE.Entity.User")
+                        .WithMany("Schedules")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("MyE.Entity.User", b =>
+                {
+                    b.HasOne("MyE.Entity.Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId");
                 });
 #pragma warning restore 612, 618
         }

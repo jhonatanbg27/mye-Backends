@@ -5,6 +5,6 @@ namespace MyE.Repository
 {
     public interface IFinalReportRepository : ICrudRepository<FinalReport>
     {
-    
+        IEnumerable<FinalReport> GetFinalReportsByMemberShip(int membershipId);
     }
 }
