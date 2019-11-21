@@ -1,0 +1,241 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Patrones Final\\MyE.Api\\MyE.Api.csproj": {}
+  },
+  "projects": {
+    "F:\\Patrones Final\\MyE.Api\\MyE.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Patrones Final\\MyE.Api\\MyE.Api.csproj",
+        "projectName": "MyE.Api",
+        "projectPath": "F:\\Patrones Final\\MyE.Api\\MyE.Api.csproj",
+        "packagesPath": "C:\\Users\\JHONATAN\\.nuget\\packages\\",
+        "outputPath": "F:\\Patrones Final\\MyE.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JHONATAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj": {
+                "projectPath": "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj"
+              },
+              "F:\\Patrones Final\\MyE.Service\\MyE.Service.csproj": {
+                "projectPath": "F:\\Patrones Final\\MyE.Service\\MyE.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj",
+        "projectName": "MyE.Entity",
+        "projectPath": "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj",
+        "packagesPath": "C:\\Users\\JHONATAN\\.nuget\\packages\\",
+        "outputPath": "F:\\Patrones Final\\MyE.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JHONATAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\Patrones Final\\MyE.Repository\\MyE.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Patrones Final\\MyE.Repository\\MyE.Repository.csproj",
+        "projectName": "MyE.Repository",
+        "projectPath": "F:\\Patrones Final\\MyE.Repository\\MyE.Repository.csproj",
+        "packagesPath": "C:\\Users\\JHONATAN\\.nuget\\packages\\",
+        "outputPath": "F:\\Patrones Final\\MyE.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JHONATAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj": {
+                "projectPath": "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "F:\\Patrones Final\\MyE.Service\\MyE.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Patrones Final\\MyE.Service\\MyE.Service.csproj",
+        "projectName": "MyE.Service",
+        "projectPath": "F:\\Patrones Final\\MyE.Service\\MyE.Service.csproj",
+        "packagesPath": "C:\\Users\\JHONATAN\\.nuget\\packages\\",
+        "outputPath": "F:\\Patrones Final\\MyE.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JHONATAN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj": {
+                "projectPath": "F:\\Patrones Final\\MyE.Entity\\MyE.Entity.csproj"
+              },
+              "F:\\Patrones Final\\MyE.Repository\\MyE.Repository.csproj": {
+                "projectPath": "F:\\Patrones Final\\MyE.Repository\\MyE.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

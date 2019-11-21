@@ -1,0 +1,9 @@
+F:\Patrones Final\MyE.Entity\bin\Debug\netstandard2.0\MyE.Entity.deps.json
+F:\Patrones Final\MyE.Entity\bin\Debug\netstandard2.0\MyE.Entity.dll
+F:\Patrones Final\MyE.Entity\bin\Debug\netstandard2.0\MyE.Entity.pdb
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.csprojAssemblyReference.cache
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.csproj.CoreCompileInputs.cache
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.AssemblyInfoInputs.cache
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.AssemblyInfo.cs
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.dll
+F:\Patrones Final\MyE.Entity\obj\Debug\netstandard2.0\MyE.Entity.pdb

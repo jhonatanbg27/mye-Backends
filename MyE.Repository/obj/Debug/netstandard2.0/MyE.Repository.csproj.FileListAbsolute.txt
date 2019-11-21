@@ -1,0 +1,12 @@
+F:\Patrones Final\MyE.Repository\bin\Debug\netstandard2.0\MyE.Repository.deps.json
+F:\Patrones Final\MyE.Repository\bin\Debug\netstandard2.0\MyE.Repository.dll
+F:\Patrones Final\MyE.Repository\bin\Debug\netstandard2.0\MyE.Repository.pdb
+F:\Patrones Final\MyE.Repository\bin\Debug\netstandard2.0\MyE.Entity.dll
+F:\Patrones Final\MyE.Repository\bin\Debug\netstandard2.0\MyE.Entity.pdb
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.csprojAssemblyReference.cache
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.csproj.CoreCompileInputs.cache
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.AssemblyInfoInputs.cache
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.AssemblyInfo.cs
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.csproj.CopyComplete
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.dll
+F:\Patrones Final\MyE.Repository\obj\Debug\netstandard2.0\MyE.Repository.pdb
