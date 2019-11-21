@@ -94,7 +94,7 @@ namespace MyE.Repository.Implementation
                 return null;
             }
         }
-        public IEnumerable<MachineReview> GetFinalReportsByUser(int userId)
+       /* public IEnumerable<MachineReview> GetFinalReportsByUser(int userId)
         {
             try
             {
@@ -105,6 +105,6 @@ namespace MyE.Repository.Implementation
             {
                 return null;
             }
-        }
+        }*/
     }
 }

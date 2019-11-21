@@ -5,6 +5,6 @@ namespace MyE.Service
 {
     public interface IFinalReportService:ICrudService<FinalReport>
     {
-         
+         IEnumerable<FinalReport> GetFinalReportsByMemberShip(int membershipId);
     }
 }

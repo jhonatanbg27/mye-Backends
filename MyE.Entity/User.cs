@@ -1,3 +1,7 @@
+
+
+using System.Collections.Generic;
+
 namespace MyE.Entity
 {
     public class User
@@ -9,7 +13,9 @@ namespace MyE.Entity
         public string Password { get; set;}
         public string Address { get; set; }
         public string Phone { get; set; }
-        public string Email { get; set; }
+        public string Email { get; set; }   
         public virtual int IdRole { get; set; }
+      //  public virtual ICollection<Schedule> Schedules { get; set; }
+     //   public virtual ICollection<MachineReview> MachineReviews { get; set; }
     }
 }

@@ -1,33 +1,45 @@
 using System.Collections.Generic;
+using System.Text;
 using MyE.Entity;
+using MyE.Repository;
 
 namespace MyE.Service.Implementation
 {
     public class FinalReportService :IFinalReportService
     {
+        private IFinalReportService finalRepository;
+        public FinalReportService(IFinalReportService finalRepository)
+        {
+            this.finalRepository=finalRepository;
+        }
         public bool Delete(int id)
         {
-            throw new System.NotImplementedException();
+            return finalRepository.Delete(id);
         }
 
         public FinalReport Get(int id)
         {
-            throw new System.NotImplementedException();
+            return finalRepository.Get(id);
         }
 
         public IEnumerable<FinalReport> GetAll()
         {
-            throw new System.NotImplementedException();
+            return finalRepository.GetAll();
         }
 
         public bool Save(FinalReport entity)
         {
-            throw new System.NotImplementedException();
+            return finalRepository.Save(entity);
         }
 
         public bool Update(FinalReport entity)
         {
-            throw new System.NotImplementedException();
+            return finalRepository.Update(entity);
         }
+        public IEnumerable<FinalReport> GetFinalReportsByMemberShip(int membershipId)
+        {
+            return finalRepository.GetFinalReportsByMemberShip(membershipId);
+        }
+
     }
 }

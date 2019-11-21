@@ -9,5 +9,6 @@ namespace MyE.Entity
         public DateTime ReportDate {get;set;}
         //
         public virtual int MembershipId {get;set;}
+ 
     }
 }
